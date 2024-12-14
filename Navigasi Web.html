@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://boxicons.com/?query="></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="bg-white shadow p-4 flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <div
+          class="bg-orange-500 text-xl w-10 h-10 flex items-center justify-center rounded-full"
+          class="font-arial font-bold"
+        >
+          E
+        </div>
+        <h1 class="text-gray-800 text-lg font-semibold">Dashboard</h1>
+      </div>
+      <div class="flex items-center space-x-4">
+        <span class="text-gray-600">Mpv_Ham</span>
+        <div class="bg-gray-300 rounded-full w-10 h-10 overflow-hidden">
+          <img
+            src="D:\File Pribadi\Bootcamp\Sinau Coding Academy\File Project\Halaman Navigasi\Bahan\Foto Profil.jpeg"
+            alt="User Profile"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <box-icon name="log-in"></box-icon>
+      </div>
+    </header>
+
+    <div class="flex">
+      <!-- Side Navigation button-->
+      <aside class="w-1/6 bg-white h-screen shadow-lg">
+        <nav class="flex flex-col space-y-4 py-6">
+          <a
+            href="#"
+            class="flex items-center space-x-2 px-6 py-3 hover:bg-orange-100 text-orange-500 font-semibold"
+          >
+            <box-icon name="dashboard" type="solid"></box-icon>
+            <span>Dashboard</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-2 px-6 py-3 text-gray-600 hover:bg-orange-100"
+          >
+            <box-icon name="notepad"></box-icon>
+            <span>Reservations</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-2 px-6 py-3 text gray 600 hover:bg-orange-100"
+          >
+            <box-icon name="book-content"></box-icon>
+            <span>Visitors</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-2 px-6 py-3 text gray 600 hover:bg-orange-100"
+          >
+            <box-icon name="book-open"></box-icon>
+            <span>History</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-2 px-6 py-3 text-gray-600 hover:bg-orange-100"
+          >
+            <box-icon name="cog"></box-icon>
+            <span>Settings</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content Placeholder -->
+      <main class="flex-1 p-6">
+        <!-- Search Section -->
+        <div class="bg-white p-4 rounded-lg shadow mb-6">
+          <div class="flex items-center space-x-4">
+            <div>
+              <label
+                for="start-date"
+                class="block text-sm font-medium text-gray-700"
+                >Start Date</label
+              >
+              <input
+                type="date"
+                id="start-date"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+              />
+            </div>
+            <div>
+              <label
+                for="end-date"
+                class="block text-sm font-medium text-gray-700"
+                >End Date</label
+              >
+              <input
+                type="date"
+                id="end-date"
+                class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm"
+              />
+            </div>
+            <button
+              class="bg-orange-500 text-white px-4 py-2 rounded-lg shadow hover:bg-orange-600"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="grid grid-cols-4 gap-4 mb-6">
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-sm font-medium text-gray-600">Total Omzet</h3>
+            <p class="text-lg font-bold text-gray-800">Rp 8.000.000</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-sm font-medium text-gray-600">Total Reservation</h3>
+            <p class="text-lg font-bold text-gray-800">100</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-sm font-medium text-gray-600">Total Visitor</h3>
+            <p class="text-lg font-bold text-gray-800">500</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h3 class="text-sm font-medium text-gray-600">Total Rooms</h3>
+            <p class="text-lg font-bold text-gray-800">12</p>
+          </div>
+        </div>
+
+        <!-- Room Cards Section -->
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Example Card -->
+          <div class="bg-white p-4 rounded-lg shadow">
+            <h4 class="text-sm font-medium text-gray-600">Aster Room</h4>
+            <div class="flex items-center justify-between mt-4">
+              <div>
+                <p class="text-sm text-gray-600">Percentage of Usage</p>
+                <p class="text-lg font-bold text-gray-800">80%</p>
+              </div>
+              <div class="w-16 h-16">
+                <svg class="w-full h-full" viewBox="0 0 36 36">
+                  <circle
+                    class="text-gray-200"
+                    stroke-width="3"
+                    fill="none"
+                    r="16"
+                    cx="18"
+                    cy="18"
+                  />
+                  <circle
+                    class="text-orange-500"
+                    stroke-width="3"
+                    fill="none"
+                    r="16"
+                    cx="18"
+                    cy="18"
+                    stroke-dasharray="80, 100"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="mt-4 text-sm font-medium text-gray-600">Omzet</p>
+            <p class="text-lg font-bold text-gray-800">Rp 2.000.000</p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
